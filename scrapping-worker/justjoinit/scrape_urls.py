@@ -4,7 +4,7 @@ from selenium.webdriver.firefox.options import Options as FirefoxOptions
 import sys
 import time
 
-def scrape_offers_urls(url, output_file):
+def scrape_offers_urls(url, output_file, n_offers = 200):
     print("Pobieranie listy ofert...")
 
     options = FirefoxOptions()
@@ -29,6 +29,9 @@ def scrape_offers_urls(url, output_file):
         link_elements = driver.find_elements(By.XPATH, "//div[@data-test-id='virtuoso-item-list']/div/div/div/a")
         for link_element in link_elements:
             offers_urls.add(link_element.get_attribute("href"))
+
+            if len(offers_urls) >= n_offers:
+                break
 
         # jak zjedzie o mniej niż chcieliśmy to znaczy że zjechaliśmy do końca
         if driver.execute_script("return document.body.scrollHeight") < expected_height:
