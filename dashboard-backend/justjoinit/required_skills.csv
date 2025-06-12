@@ -65,9 +65,14 @@ Data modeling
 ERWIN
 Lucidchart
 PowerDesigner
+Azure SQL
+ELT
+Terraform
+ADLS
 DBT
 Data Vault
 Matillion
+NoSQL
 SSIS
 Talend
 SSAS
@@ -80,14 +85,12 @@ FRTB
 R
 Matlab
 Azure Data Stack
-Terraform
 Kubernetes
 AKS
 TensorFlow
 PyTorch
 Looker
 Software Development
-NoSQL
 Scrum
 Kanban
 Regulatory Requirements
@@ -97,6 +100,8 @@ Data architecture
 Data Analytics
 Data Factory
 IAM
+DOMO ETL systems
+Cloud Infrastructure
 Healthcare
 SharePoint
 Power Automate
