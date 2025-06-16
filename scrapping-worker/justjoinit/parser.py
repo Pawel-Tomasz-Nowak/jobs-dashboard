@@ -42,8 +42,8 @@ def main():
     OUTPUT_FILE = args[2]
 
     # do testowania
-    # INPUT_DIR = "./offers"
-    # OUTPUT_FILE = "./offers.json"
+    INPUT_DIR = "./offers"
+    OUTPUT_FILE = "./offers.json"
 
     parse_offers(INPUT_DIR, OUTPUT_FILE)
 

@@ -40,8 +40,8 @@ def main():
     OUTPUT_DIR = args[2]
 
     # # do testowania
-    # INPUT_PATH = "./offers_urls.txt"
-    # OUTPUT_DIR = "./offers"
+    #INPUT_PATH = "./offers_urls.txt"
+    #OUTPUT_DIR = "./offers"
 
     scrape_full_offers(INPUT_PATH, OUTPUT_DIR)
 

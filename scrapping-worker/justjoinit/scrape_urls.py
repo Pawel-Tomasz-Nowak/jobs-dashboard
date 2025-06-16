@@ -4,7 +4,7 @@ from selenium.webdriver.firefox.options import Options as FirefoxOptions
 import sys
 import time
 
-def scrape_offers_urls(url, output_file, n_offers = 200):
+def scrape_offers_urls(url, output_file, n_offers = 800):
     print("Pobieranie listy ofert...")
 
     options = FirefoxOptions()
@@ -48,8 +48,8 @@ def main():
     OUTPUT_FILE = args[2]
 
     # # do testowania
-    # URL = "https://justjoin.it/job-offers/all-locations/data"
-    # OUTPUT_FILE = "offers_urls.txt"
+    #URL = "https://justjoin.it/job-offers/all-locations/data"
+    #OUTPUT_FILE = "offers_urls.txt"
 
     scrape_offers_urls(URL, OUTPUT_FILE)
 
